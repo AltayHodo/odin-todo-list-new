@@ -1,12 +1,16 @@
 import todoList from './todoList';
-todoList.addProject('basketball');
 
 const DOMHandler = (() => {
+  const container = document.querySelector('.container');
   const renderTodos = () => {
-    const container = document.querySelector('.container');
+    container.innerHTML = '';
     todoList.getTodos().forEach((todo) => {
       const todoItem = document.createElement('div');
-      todoItem.textContent = todo.title;
+      todoItem.innerHTML = `
+        <span> ${todo.title} </span>
+        <span> ${todo.priority} </span>
+        <span> ${todo.dueDate} </span>
+      `;
       todoItem.classList.add('todo-item');
       container.appendChild(todoItem);
     });

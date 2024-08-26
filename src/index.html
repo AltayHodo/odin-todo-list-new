@@ -8,8 +8,23 @@
 <body>
   <h1>Todo List</h1>
 
-  <div class="container">
-    
-  </div>
+  <div class="container"></div>
+  <form class="add-task-form">
+    <input type="text" id="task-name" name="task-name" placeholder="task name">
+    <div>
+      <div>Priority:</div>
+      <label for="high">high</label>
+      <input type="radio" name="priority" id="high">
+      <label for="medium">medium</label>
+      <input type="radio" name="priority" id="medium">
+      <label for="low">low</label>
+      <input type="radio" name="priority" id="low">
+    </div>
+    <div>
+      <label for="due-date">Due Date:</label>
+      <input type="date" id="due-date">
+    </div>
+    <button class="add-task-btn">Add Task</button>
+  </form>
 </body>
 </html>

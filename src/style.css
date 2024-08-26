@@ -3,3 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 } */
+
+.add-task-form{
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.add-task-form > div{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
